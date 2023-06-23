@@ -39,7 +39,7 @@ function cellClicked(){
     if(options[cellIndex] != "" || !running){
         return;
     } //on click sound
-    const audio = new Audio(`/audio/click.mp3`);
+    const audio = new Audio(`audio/click.mp3`);
     audio.play();
 
     updateCell(this, cellIndex);
@@ -82,7 +82,7 @@ function checkWinner(){
     
     //win sound
 
-    const audio = new Audio(`/audio/win.mp3`);
+    const audio = new Audio(`audio/win.mp3`);
     audio.play();
 
     }
@@ -92,7 +92,7 @@ function checkWinner(){
     
     //draw sound
 
-    const audio = new Audio(`/audio/rizz.mp3`);
+    const audio = new Audio(`audio/rizz.mp3`);
     audio.play();
     }
     else{
@@ -107,7 +107,7 @@ function restartGame(){
     cells.forEach(cell => cell.textContent = "");
     running = true
 
-    const audio = new Audio(`/audio/pop.mp3`);
+    const audio = new Audio(`audio/pop.mp3`);
     audio.play();
 
 }
